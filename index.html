@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy - AI Fitness Plan Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💪 FitBuddy</h1>
+        <p>AI Fitness Plan Generator</p>
+        <small>Powered by Gemini Models</small>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Create Your Fitness Plan</h2>
+
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label>Weight (kg)</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+
+            <label>Height (cm)</label>
+            <input type="number" id="height" placeholder="Enter your height">
+
+            <label>Fitness Goal</label>
+            <select id="goal">
+                <option value="">Select your goal</option>
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>General Fitness</option>
+                <option>Strength Training</option>
+            </select>
+
+            <label>Activity Level</label>
+            <select id="activity">
+                <option value="">Select activity level</option>
+                <option>Beginner</option>
+                <option>Moderate</option>
+                <option>Active</option>
+            </select>
+
+            <label>Workout Days per Week</label>
+            <input type="number" id="days" min="1" max="7"
+                   placeholder="Example: 4">
+
+            <button onclick="generatePlan()">
+                Generate My Fitness Plan
+            </button>
+        </section>
+
+        <section class="card result">
+            <h2>🤖 Your AI Fitness Plan</h2>
+            <div id="result">
+                Your personalized fitness plan will appear here.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FitBuddy © 2026 | AI Fitness Assistant</p>
+        <p>For educational purposes only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
